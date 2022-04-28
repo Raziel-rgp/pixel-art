@@ -3,5 +3,23 @@
     border: 1px solid black;
 }
 li:active {
+    color: white;
     background-color: rgb(255, 0, 0)
+}
+#Cor1:hover {
+    color: white;
+    background-color: black;
+}
+#Cor2:hover {
+    background-color: orange;
+}
+#Cor3:hover {
+    background-color: grey;
+}
+#Cor4:hover {
+    background-color: green;
+
+}
+#Cor5:hover {
+    background-color: brown;
 }
