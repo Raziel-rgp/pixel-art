@@ -1,0 +1,7 @@
+.barra {
+    background-color: aqua;
+    border: 1px solid black;
+}
+li:active {
+    background-color: rgb(255, 0, 0)
+}
