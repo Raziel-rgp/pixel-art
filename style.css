@@ -2,17 +2,20 @@ body {
     background-color: aqua;
 }
 #title {
-    overflow:visible;
     position:absolute;
     top:0px;
+    background-color: white;
+    width: 1366px;
+    height: 50px;
+    right: 0mm;
 }
 #color-palette {
     background-color: white;
     position: absolute;
     width: 1366px;
-    height: 130px;
+    height: 80px;
     right:0cm;
-    top: 60px;
+    top: 110px;
 }
 
 .color {
@@ -20,29 +23,42 @@ body {
     border: 1px solid black;
     width: 40px;
     height: 40px;
-    top: 60px;
+
+
 }
 #Cor1 {
     background-color: black;
-    left: 10px
+    left: 10px;
+
 }
 #Cor2 {
     background-color: orange;
     border: 1px solid black;
     left: 60px;
+
 }
 #Cor3 {
     background-color: grey;
     left: 110px;
+
 }
 #Cor4 {
     background-color: green;
     left: 160px;
 
+
 }
-#Cor5 {
-    background-color: brown;
-    left: 210px;
 
-
+.pixel {
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    border: 1px solid black;
+    width: 5px;
+    height: 5px;
+    top: 200px;
+}
+.pixel {
+    width: 40px;
+    height: 40px;
 }
