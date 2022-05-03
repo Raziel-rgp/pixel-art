@@ -2,20 +2,21 @@ body {
     background-color: aqua;
 }
 #title {
-    position:absolute;
+    position:relative;
     top:0px;
     background-color: white;
     width: 1366px;
     height: 50px;
-    right: 0mm;
+    right: 0px;
 }
 #color-palette {
     background-color: white;
-    position: absolute;
+    position:relative;
     width: 1366px;
     height: 80px;
     right:0cm;
     top: 110px;
+    
 }
 
 .color {
@@ -23,9 +24,11 @@ body {
     border: 1px solid black;
     width: 40px;
     height: 40px;
-
+    display: flex;
+    
 
 }
+
 #Cor1 {
     background-color: black;
     left: 10px;
@@ -51,14 +54,20 @@ body {
 
 .pixel {
     background-color: white;
-    position: absolute;
-    margin: auto;
     border: 1px solid black;
-    width: 5px;
-    height: 5px;
-    top: 200px;
-}
-.pixel {
     width: 40px;
     height: 40px;
+    top: 200px;
+
+}
+#pixel-board {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.selected {
+    background-color: black;
 }
