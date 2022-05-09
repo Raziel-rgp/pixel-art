@@ -11,31 +11,21 @@ body {
 }
 #color-palette {
     position:relative;
+    display: flex;
+    flex-wrap: nowrap;
     width: 160px;
     height: 40px;
     right:0cm;
     top: 110px;
-    display: flex;
-    flex-wrap: wrap;
 }
 .color {
-    position: relative;
     border: 1px solid black;
-    width: 40px;
+    display: flex;
+    flex-wrap: nowrap;
     height: 40px;
-}
-#Cor1 {
-    background-color: black;
-}
-#Cor2 {
-    background-color: orange;
-}
-#Cor3 {
-    background-color: grey;
-}
-#Cor4 {
-    background-color: green;
-}
+    width: 40px;
+  }
+  
 .pixel {
     background-color: white;
     border: 1px solid black;
@@ -51,7 +41,4 @@ body {
     top: 200px;
     display: flex;
     flex-wrap: wrap;
-}
-.selected {
-    background-color: black;
 }
