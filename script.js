@@ -33,17 +33,13 @@ function crearCor() {
     }
     blocoCor[0].style.backgroundColor = 'rgb(0 , 0 , 0)';
     blocoCor[0].classList.add('selected')
+    selectedPaint = blocoCor[0].style.backgroundColor
 }
 function pintandoPixel () {
-    let selectedPixel = document.querySelector('.selected')
     let pixelWhite = document.querySelectorAll('.pixel')
     for(let index = 0; index < pixelWhite.length; index ++){
         pixelWhite[index].addEventListener('click', () => {
-            
-            selectedPixel.classList.remove('selected')
-            pixelWhite[index].className = 'pixel selected'
             pixelWhite[index].style.backgroundColor = selectedPaint
-
         })
     }
     
