@@ -55,6 +55,16 @@ function select () {
         }) //Elias me ajudou
     }
 }
+const limpador = document.querySelector('#clear-board')
+limpador.addEventListener('click', () => {
+    let pixelWhite = document.querySelectorAll('.pixel')
+    for(let index = 0; index < pixelWhite.length; index ++){
+        pixelWhite[index].style.backgroundColor = 'white'
+    }
+});
+function clearAll (){
+    
+}
 select()
 pintandoPixel()
 
