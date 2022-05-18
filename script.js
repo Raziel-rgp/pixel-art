@@ -1,3 +1,5 @@
+const enviar = document.querySelector('#generate-board')
+enviar.addEventListener("click", morePixels)
 const paletaList = document.querySelector('#color-palette')
 for(let index = 0; index < 4; index++){
     let paletaCrianca = document.createElement('li');
@@ -6,10 +8,15 @@ for(let index = 0; index < 4; index++){
     paletaList.appendChild(paletaCrianca);
 }
 
+
 window.onload = iniciar()
 function iniciar() {
     const selectedPaint = 'rgb(0, 0, 0)'
-    createPixels();
+    crearCor();
+    createPixels()
+    select()
+    pintandoPixel()
+    
 }
 const blocoCor = document.getElementsByClassName('color')
 function createPixels() {
@@ -19,7 +26,7 @@ function createPixels() {
         pixelCrianca.className = 'pixel';
         pixel.appendChild(pixelCrianca);
     }
-    crearCor();
+    
 }
 function crearCor() {
     let blocoCor = document.getElementsByClassName('color');
@@ -62,9 +69,20 @@ limpador.addEventListener('click', () => {
         pixelWhite[index].style.backgroundColor = 'white'
     }
 });
-function clearAll (){
-    
+function morePixels (){
+    let leitorValores = document.querySelector('#board-size')
+    const valoresX = leitorValores.value;
+    if(valoresX < 1){
+        alert('Board inválido!')
+    }else{
+        console.log(valoresX)
+        let tamanhoPixel = (valoresX * valoresX)-26
+        console.log(tamanhoPixel)
+        let pixelCall = document.querySelector('#pixel-board')
+        for(let index = 0; index <= tamanhoPixel; index ++){
+            pixelNovo = document.createElement('li')
+            pixelNovo.className = 'pixel'
+            pixelCall.appendChild(pixelNovo);
+        }
+    }
 }
-select()
-pintandoPixel()
-

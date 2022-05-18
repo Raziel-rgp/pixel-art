@@ -39,12 +39,21 @@ body {
 #pixel-board {
     position: relative;
     width: 210px;
-    height: 210px;
+    height: 100px;
     top: 200px;
     display: flex;
     flex-wrap: wrap;
 }
-#valores {
+.valores {
+    background-color: white;
     position: relative;
     top: 120px;
+    height: 35px;
+    display:flex;
+    flex-wrap: nowrap;
+}
+#valor-pixel {
+    background-color: white;
+    position: relative;
+    height: 15px;
 }
